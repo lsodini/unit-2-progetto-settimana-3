@@ -113,3 +113,47 @@ nav{
 	background-color: #e1b31d;
 	border-color: #e1b31d;
   }
+  /************************* Footer ************************************/
+ /* Stile per il footer */
+footer {
+    background-color: #000; /* Nero come la navbar */
+    color: #fff; /* Testo bianco */
+    padding: 2rem 0; /* Padding per spaziatura */
+}
+
+footer h5 {
+    margin-bottom: 1.5rem; /* Spazio sotto il titolo */
+}
+
+footer a {
+    color: #f1c40f; /* Colore dorato per i link */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #e1b31d; /* Colore dorato più scuro per hover */
+    text-decoration: underline;
+}
+
+footer .fa {
+    margin-right: 8px; /* Spazio tra l'icona e il testo */
+    font-size: 1.5rem; /* Dimensione delle icone */
+}
+
+footer .list-unstyled {
+    padding-left: 0; /* Rimuove il padding predefinito */
+}
+
+footer .list-unstyled li {
+    margin-bottom: 0.5rem; /* Spazio tra gli elementi della lista */
+}
+
+footer .social-links a {
+    font-size: 1.5rem; /* Dimensione delle icone social */
+    margin: 0 0.5rem; /* Spazio orizzontale tra le icone */
+    transition: color 0.3s ease; /* Transizione morbida per l'hover */
+}
+
+footer .social-links a:hover {
+    color: #e1b31d; /* Colore dorato più scuro per hover */
+}
