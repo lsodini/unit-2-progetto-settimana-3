@@ -5,32 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Shop Homepage</title>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
 </head>
-<body>
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">CRUDAZON</a>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="backoffice.html">Back-Office</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+<body class="sfondo">
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+		<div class="container-fluid">
+		  <a class="navbar-brand pt-2" href="#">
+			<img width="50px" src="assets/img/logo.png" alt="Logo"> NOVANEST
+		  </a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		<span><img width="50px" src="assets/img/space-station.png"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+ 			<div class="navbar-nav">
+			  <a class="nav-link active" href="index.html">Home</a>
+			  <a class="nav-link" href="backoffice.html">Back Office</a>
+			</div>
+		  </div>
+		</div>
+	  </nav>
+	  <div class="container">
+		<div class="row">
+		  <div class="col-12 text-center mt-4 testo">
+			<h1 class="noWrap"><img width=60px src="assets/img/noun-darth-vader-5151685.svg">May the Force be with you<img width=60px src="assets/img/noun-chewbacca-5151686.svg" ></h1>
+		  </div>
+		</div>
+	  </div>
+		
+	  <header class="jumbotron jumbotron-fluid">
+		<div class="container text-center">
+		  <h2 class="display-4">Explore the Galaxy</h2>
+		  <p class="lead">Discover memorabilia. From lightsabers to droids, we have everything a Jedi or Sith could wish for!</p>
+		  <a class="btn btn-primary btn-lg" href="#main" role="button">Shop Now</a>
+		</div>
+	  </header>
+<main id="main">
+	<div class="container text-center">
+		<img class="icon" width="60px" src="assets/img/noun-bb-8-376682.svg" alt="Logo">
+		<img class="icon" width="60px" src="assets/img/noun-robot-2041.svg" alt="Logo">
+	<img  width="60px" src="assets/img/noun-at-at-walker-207612.svg" alt="Logo">
+	<hr/>
+</div>
+	<h2 class="testo text-center">Our Products</h2>
 
   <div class="container mt-4">
     <div class="row" id="product-container">
       <!-- Products will be dynamically loaded here -->
     </div>
   </div>
+</main>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="script.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
