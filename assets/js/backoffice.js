@@ -13,7 +13,7 @@ function handleFormSubmit(event) {
   };
 
   if (productId) {
-    // Editing an existing product
+    // modifica di un prodotto esistente
     updateProduct(productId, product)
       .then(data => {
         alert('Product updated successfully!');
@@ -24,7 +24,7 @@ function handleFormSubmit(event) {
         alert('Error updating product. Please try again.');
       });
   } else {
-    // Creating a new product
+    // Creazione di un nuovo prodotto
     createProduct(product)
       .then(data => {
         alert('Product created successfully!');

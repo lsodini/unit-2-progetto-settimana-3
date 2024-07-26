@@ -1,7 +1,7 @@
 const API_URL = 'https://striveschool-api.herokuapp.com/api/product/';
 const API_TOKEN = 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NmEzNTVjY2YyNjBjYzAwMTVjYzBkZDQiLCJpYXQiOjE3MjE5ODAzNjQsImV4cCI6MTcyMzE4OTk2NH0.K87QDaj1lcnZmTv1yvXdlNqmTa8Rasd704rnX7ftOi8';
 
-// Fetch products from the API
+// Funzione per ottenere i parametri dalla URL
 function fetchProducts() {
   return fetch(API_URL, {
     headers: {
@@ -10,7 +10,7 @@ function fetchProducts() {
   }).then(response => response.json());
 }
 
-// Display products on the homepage
+// mostra i prodotti nella pagina
 function displayProducts(products) {
   const productContainer = document.getElementById('product-container');
   productContainer.innerHTML = '';
@@ -45,7 +45,7 @@ function displayProducts(products) {
   });
 }
 
-// Initialize the homepage
+// inizializzare la pagina
 if (document.getElementById('product-container')) {
   fetchProducts().then(displayProducts).catch(error => console.error('Error fetching products:', error));
 }
